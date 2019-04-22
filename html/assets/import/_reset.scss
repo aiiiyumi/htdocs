@@ -1,0 +1,199 @@
+//reset
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif, “メイリオ”, Meiryo, serif;
+}
+
+* {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+img {
+    border-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+
+		[hidden] {
+		    display: none !important;
+		}
+
+		[disabled] {
+		    cursor: not-allowed;
+		}
+
+		:focus:not(:focus-visible) {
+		    outline: none;
+		}
+
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+  margin: 0;
+}
+ol, li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+audio,
+video {
+  display: inline-block;
+}
+img {
+  border-style: none;
+}
+svg {
+  fill: currentColor;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+table {
+  border-collapse: collapse;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+/*   line-height: inherit; */
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+canvas {
+  display: inline-block;
+}
+
+.sr-only {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    left: -9999px;
+    top: -9999px;
+}

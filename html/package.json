@@ -1,0 +1,25 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "color-name": "^1.1.4",
+    "gulp-changed": "^3.2.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "rfs": "^8.0.1"
+  }
+}
