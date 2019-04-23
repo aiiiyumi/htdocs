@@ -39,6 +39,9 @@ $admin_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
 $admin_reply_text .= "氏名：" . $clean['name'] . "\n";
 $admin_reply_text .= "カナ：" . $clean['furigana'] . "\n";
 $admin_reply_text .= "会社名：" . $clean['companyname'] . "\n";
+$admin_reply_text .= "部署：" . $clean['department'] . "\n";
+$admin_reply_text .= "郵便番号：" . $clean['zip'] . "\n";
+$admin_reply_text .= "住所：" . $clean['address'] . "\n";
 $admin_reply_text .= "電話番号：" . $clean['tel'] . "\n";
 $admin_reply_text .= "メール：" . $clean['mail'] . "\n";
 $admin_reply_text .= "メール２：" . $clean['mail2'] . "\n";
@@ -292,6 +295,30 @@ function validation($data) {
                     </div>
                     <div class="flex-row-md plant-list-box-none">
                       <div class="flex-l-r t-left">
+                        <p class="text-b">部署名</p>
+                      </div>
+                      <div class="flex-l-l t-left contact-fbox1">
+                        <p id="input_text4" class="CfmItem"><?php echo $clean['department']; ?></p>
+                      </div>
+                    </div>
+                    <div class="flex-row-md plant-list-box-none">
+                      <div class="flex-l-r t-left">
+                        <p class="text-b">郵便番号</p>
+                      </div>
+                      <div class="flex-l-l t-left contact-fbox1">
+                        <p id="input_text5" class="CfmItem"><?php echo $clean['zip']; ?></p>
+                      </div>
+                    </div>
+                    <div class="flex-row-md plant-list-box-none">
+                      <div class="flex-l-r t-left">
+                        <p class="text-b">ご住所</p>
+                      </div>
+                      <div class="flex-l-l t-left contact-fbox1">
+                        <p id="input_text6" class="CfmItem"><?php echo $clean['address']; ?></p>
+                      </div>
+                    </div>
+                    <div class="flex-row-md plant-list-box-none">
+                      <div class="flex-l-r t-left">
                         <p class="text-b">電話番号</p>
                       </div>
                       <div class="flex-l-l t-left contact-fbox1">
@@ -340,6 +367,9 @@ function validation($data) {
 									<input type="hidden" name="name" value="<?php echo $clean['name']; ?>">
 									<input type="hidden" name="furigana" value="<?php echo $clean['furigana']; ?>">
 									<input type="hidden" name="companyname" value="<?php echo $clean['companyname']; ?>">
+									<input type="hidden" name="department" value="<?php echo $clean['department']; ?>">
+									<input type="hidden" name="zip" value="<?php echo $clean['zip']; ?>">
+									<input type="hidden" name="address" value="<?php echo $clean['address']; ?>">
 									<input type="hidden" name="tel" value="<?php echo $clean['tel']; ?>">
 									<input type="hidden" name="mail" value="<?php echo $clean['mail']; ?>">
 									<input type="hidden" name="mail2" value="<?php echo $clean['mail2']; ?>">
@@ -393,6 +423,30 @@ function validation($data) {
                   </div>
                   <div class="flex-l-l t-left contact-fbox1">
                     <input id="Cnt3" type="text" name="companyname" value="<?php if(!empty($clean['companyname'])) { echo $clean['companyname']; }?>" class="CntItem CntInput Require">
+                  </div>
+                </div>
+                <div class="flex-row-md plant-list-box-none">
+                  <div class="flex-l-r t-left">
+                    <p class="text-b">部署名</p>
+                  </div>
+                  <div class="flex-l-l t-left contact-fbox1">
+                    <input id="Cnt4" type="text" name="department" value="<?php if(!empty($clean['department'])) { echo $clean['department']; }?>" class="CntItem CntInput Require">
+                  </div>
+                </div>
+                <div class="flex-row-md plant-list-box-none">
+                  <div class="flex-l-r t-left">
+                    <p class="text-b">郵便番号</p>
+                  </div>
+                  <div class="flex-l-l t-left contact-fbox1 c-zip">
+                    <input id="Cnt5" type="text" name="zip" value="<?php if(!empty($clean['zip'])) { echo $clean['zip']; }?>" class="CntItem CntInput Require">
+                  </div>
+                </div>
+                <div class="flex-row-md plant-list-box-none">
+                  <div class="flex-l-r t-left">
+                    <p class="text-b">ご住所</p>
+                  </div>
+                  <div class="flex-l-l t-left contact-fbox1">
+                    <input id="Cnt6" type="text" name="address" value="<?php if(!empty($clean['address'])) { echo $clean['address']; }?>" class="CntItem CntInput Require">
                   </div>
                 </div>
                 <div class="flex-row-md plant-list-box-none">
