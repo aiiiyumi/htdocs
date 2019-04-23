@@ -17,9 +17,9 @@ $(function(){
 		        $(window).scroll(function () {
 
 		// 240pxスクロールした時点でフェードイン表示する
-		        if( $(this).scrollTop() > 240 ) {　　
+		        if( $(this).scrollTop() > 440 ) {　　
 		            if( isHidden ) {
-		                $btn.stop(true,true).fadeIn(200);
+		                $btn.stop(true,true).fadeIn(300);
 		                isHidden = false;
 		            }
 		        } else {
@@ -31,6 +31,8 @@ $(function(){
 		            }
 		        }
 		    });
+
+
 
 		// クリックイベントの登録
 		    $btn.click(function(){
@@ -47,22 +49,30 @@ $(function(){
 		    });
 		});
 
-		$(function(){
-  $(window).scroll(function(e){
-    var bottomY = 170, //スクロール時の下からの位置
-      $window = $(e.currentTarget),
-      height = $window.height(), //ウィンドウ(ブラウザ)の高さ
-      scrollTop = $window.scrollTop(), //スクロール量
-      documentHeight = $(document).height(), //ページ全体の高さ
-      footerHeight = $("footer").height(); //フッタの高さ
-      bottomHeight = footerHeight + height + scrollTop + bottomY - documentHeight;
-    if(scrollTop >= documentHeight - height - footerHeight + bottomY){
-      $('.top_btn').css({ bottom: bottomHeight - bottomY }); //スクロール時にbottomの値が変動
-    }else{
-      $('.top_btn').css({ bottom: bottomY });
-    }
-  });
-});
+// 		$(function(){
+// 	$(window).on("scroll touchmove", function(){ //スクロール中に判断する
+// 			$(".top_btn").stop(); //アニメーションしている場合、アニメーションを強制停止
+// 			$(".top_btn").css('display', 'none').delay(500).fadeIn('fast');
+// 			//スクロール中は非表示にして、500ミリ秒遅らせて再び表示
+// 	});
+// });
+
+// 		$(function(){
+//   $(window).scroll(function(e){
+//     var bottomY = 10, //スクロール時の下からの位置
+//       $window = $(e.currentTarget),
+//       height = $window.height(), //ウィンドウ(ブラウザ)の高さ
+//       scrollTop = $window.scrollTop(), //スクロール量
+//       documentHeight = $(document).height(), //ページ全体の高さ
+//       footerHeight = $("footer").height(); //フッタの高さ
+//       bottomHeight = footerHeight + height + scrollTop + bottomY - documentHeight;
+//     if(scrollTop >= documentHeight - height - footerHeight + bottomY){
+//       $('.top_btn').css({ bottom: bottomHeight - bottomY }); //スクロール時にbottomの値が変動
+//     }else{
+//       $('.top_btn').css({ bottom: bottomY });
+//     }
+//   });
+// });
 
 
 

@@ -355,7 +355,7 @@ function validation($data) {
                       </tr>
                       <tr>
                         <th class="blue-b-p text-b t-center">作業所勤務</th>
-                        <td>平日／8：00～17：00　　土曜日／8：00～12：00</td>
+                        <td>平日／8：00～17：00　　土曜日／8：00～17：00</td>
                       </tr>
                       <tr>
                         <th class="blue-b-p text-b t-center">休　暇</th>
@@ -663,7 +663,7 @@ function validation($data) {
 
             <!-- top_btn -->
             <p class="top_btn">
-              <a href="#top"><i class="fas fa-arrow-up"></i><br>上に戻る</a>
+              <a href="#top"><i class="fas fa-arrow-up"></i></a>
             </p>
             <!-- top_btn -->
           </section>

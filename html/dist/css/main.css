@@ -910,7 +910,7 @@ html {
 }
 
 .top_btn {
-  width: 75px;
+  width: 55px;
   position: fixed;
   right: calc(100% / 80);
   bottom: 3rem;
@@ -1418,19 +1418,24 @@ header nav ul li a {
 
 .civil {
   display: none;
+  /*   @include mq(md) {
+    display: block;
+    position: absolute;
+      top: 30%;
+      left: 15%;
+      background: url(../../dist/images/27.png) no-repeat top center;
+      background-color: #FFF;
+      background-size: 100%;
+      padding: 120px 0 10px 0;
+      border-radius: 20px;
+  } */
 }
 
 @media screen and (min-width: 769px) {
   .civil {
     display: block;
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    background: url(../../dist/images/27.png) no-repeat top center;
-    background-color: #FFF;
-    background-size: 100%;
-    padding: 120px 0 10px 0;
-    border-radius: 20px;
+    top: 35%;
+    left: 18%;
   }
 }
 
@@ -1612,6 +1617,92 @@ header nav ul li a {
   height: auto;
   margin: 0 auto;
   margin-bottom: 0.7rem;
+}
+
+.sp_menu_wrap a:hover {
+  color: #ffbc00;
+}
+
+.sp_menu_wrap a:visited {
+  color: #FFF;
+}
+
+.sp_m_b {
+  display: block;
+  background: rgba(15, 126, 196, 0.9);
+  padding: 3rem 1rem;
+  color: #FFF;
+  text-align: center;
+}
+
+.sp_m01 {
+  background: url(../../dist/images/sp_m01.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m02 {
+  background: url(../../dist/images/sp_m02.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m03 {
+  background: url(../../dist/images/sp_m03.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m04 {
+  background: url(../../dist/images/sp_m04.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m05 {
+  background: url(../../dist/images/sp_m05.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m06 {
+  background: url(../../dist/images/sp_m06.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m07 {
+  background: url(../../dist/images/sp_m07.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m08 {
+  background: url(../../dist/images/sp_m10.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m9 {
+  background: url(../../dist/images/sp_m09.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+.sp_m10 {
+  background: url(../../dist/images/sp_m10.jpg) no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  padding: 0;
 }
 
 .f-title {
@@ -3790,6 +3881,7 @@ a.work-menu-childcontent-first:focus {
 .pres2-quote {
   width: 100%;
   padding: 4rem 0 0 0;
+  font-size: 1.8rem;
 }
 
 .pres2-quote .pres2-quote-in {
@@ -5446,15 +5538,21 @@ span.required, span.optional {
 }
 
 .recruit-quote .recruit-quote-in {
+  font-size: 1.8rem;
   width: 80%;
   position: relative;
-  font-size: 2rem;
   font-weight: 600;
   color: #FFF;
   padding: 4rem 0;
   text-align: center;
   line-height: 1.7;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+  .recruit-quote .recruit-quote-in {
+    font-size: 2rem;
+  }
 }
 
 .recruit-quote .recruit-quote-in::before, .recruit-quote .recruit-quote-in::after {
@@ -5520,6 +5618,7 @@ a.r-btn:hover {
 
 .re-index-tex {
   padding: 0 2rem 2rem 2rem;
+  line-height: 1.7;
 }
 
 .re-index-tex .o-btn {
@@ -5734,4 +5833,14 @@ a.r-btn:hover {
 
 .w-100 {
   width: 100%;
+}
+
+.sp_none {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .sp_none {
+    display: block;
+  }
 }
