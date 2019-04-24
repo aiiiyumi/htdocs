@@ -19,35 +19,34 @@ $(function(){
 		// 240pxスクロールした時点でフェードイン表示する
 		        if( $(this).scrollTop() > 440 ) {　　
 		            if( isHidden ) {
-		                $btn.stop(true,true).fadeIn(400);
+		                $btn.stop(true,true).fadeIn(300);
 		                isHidden = false;
 		            }
-		        }
-						// else {
+		        } else {
 
 		//最上段から240pxの位置に戻るとフェードアウトで消える
-		            // if( !isHidden ) {
-		            //     $btn.stop(true,true).fadeOut();
-		            //     isHidden = true;
-		            // }
-		        // }
+		            if( !isHidden ) {
+		                $btn.stop(true,true).fadeOut();
+		                isHidden = true;
+		            }
+		        }
 		    });
 
 
-	//
-	// 	// クリックイベントの登録
-	// 	    $btn.click(function(){
-	//
-	// 	//  ページトップへスクロール
-	// 	        $('html, body').animate({
-	// 	                'scrollTop': 0
-	//
-	// 	// 1/1000秒でスピード調整
-	// }, 800);
-	//
-	// 	// デフォルトイベントのキャンセル
-	// 	        return false;
-	// 	    });
+
+		// クリックイベントの登録
+		    $btn.click(function(){
+
+		//  ページトップへスクロール
+		        $('html, body').animate({
+		                'scrollTop': 0
+
+		// 1/1000秒でスピード調整
+	}, 800);
+
+		// デフォルトイベントのキャンセル
+		        return false;
+		    });
 		});
 
 		$(function(){
@@ -65,18 +64,15 @@ $(function(){
 
 		    if (timer !== false) {
 		      clearTimeout(timer);
-		      $('.top_btn').fadeIn();
+		      $('.top_btn').fadeOut();
 		    }
 		    timer = setTimeout(function() {
-		      if(scrollY + windowH > $('body').offset().top) {
-		        $('.top_btn').fadeOut(400);
-		      } else if(scrollY > 100) {
-		        $('.top_btn').fadeOut(400);
-		      } else if (scrollY + windowH > $('footer').offset().top) {
-						$('.top_btn').fadeIn(400);
-					}else{
+		      if(scrollY + windowH > $('footer').offset().top) {
 		        $('.top_btn').fadeIn(400);
-
+		      } else if(scrollY > 100) {
+		        $('.top_btn').fadeIn(400);
+		      } else {
+		        $('.top_btn').fadeOut(400);
 		      }
 		    }, 500);
 		  });

@@ -59,7 +59,7 @@ $admin_reply_text .= "問い合わせ内容：" . $clean['content'] . "\n\n";
 
 
 // 運営側へメール送信
-mb_send_mail( 'nyanpooo@lunedetriangle.sakura.ne.jp', $admin_reply_subject, $admin_reply_text, $header);
+mb_send_mail( 'soumu@daioh.co.jp', $admin_reply_subject, $admin_reply_text, $header);
 
 }
 function validation($data) {
