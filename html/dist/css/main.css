@@ -1220,12 +1220,6 @@ header nav ul li a {
 .index-f {
   position: relative;
   width: 100%;
-  height: 0;
-  background: url(../../dist/images/map.png) no-repeat;
-  background-position: center top;
-  background-size: contain;
-  position: relative;
-  padding-top: 55%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1234,6 +1228,27 @@ header nav ul li a {
     width: 100%;
     margin: 0 auto;
   }
+}
+
+.anime {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: calc(650 / 1200 * 100%) 0 0 0;
+}
+
+.anime iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .index-map-inner {
@@ -1330,7 +1345,8 @@ header nav ul li a {
 .f-map-point {
   position: absolute;
   display: inline;
-  width: 170px;
+  width: 140px;
+  font-size: 1.4rem;
   background: #FFFFFF;
   padding: 0.75rem 3rem;
   text-align: center;
@@ -1343,7 +1359,7 @@ header nav ul li a {
   -moz-border-radius: 60px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .f-map-point {
     position: absolute;
     display: inline;
@@ -1363,11 +1379,18 @@ header nav ul li a {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .f-map-point {
+    width: 170px;
+    font-size: 1.9rem;
+  }
+}
+
 .f-map-point:after, .f-map-point:before {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .f-map-point:after, .f-map-point:before {
     display: block;
     border: solid transparent;
@@ -1385,7 +1408,7 @@ header nav ul li a {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .f-map-point:after {
     display: block;
     border-color: rgba(255, 255, 255, 0);
@@ -1402,7 +1425,7 @@ header nav ul li a {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .f-map-point:before {
     display: block;
     border-color: rgba(224, 112, 0, 0);
@@ -1431,6 +1454,14 @@ header nav ul li a {
   } */
 }
 
+@media screen and (min-width: 481px) {
+  .civil {
+    display: block;
+    top: 30%;
+    left: 13%;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .civil {
     display: block;
@@ -1443,7 +1474,7 @@ header nav ul li a {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .civil_point {
     display: block;
     position: absolute;
@@ -1458,6 +1489,14 @@ header nav ul li a {
   display: none;
 }
 
+@media screen and (min-width: 481px) {
+  .pavement {
+    display: block;
+    top: 55%;
+    left: 7rem;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .pavement {
     display: block;
@@ -1468,6 +1507,14 @@ header nav ul li a {
 
 .architecture {
   display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .architecture {
+    display: block;
+    top: 30%;
+    left: 35%;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1482,6 +1529,14 @@ header nav ul li a {
   display: none;
 }
 
+@media screen and (min-width: 481px) {
+  .port {
+    display: block;
+    top: 62%;
+    left: 53%;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .port {
     display: block;
@@ -1492,6 +1547,14 @@ header nav ul li a {
 
 .environment {
   display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .environment {
+    display: block;
+    top: 35%;
+    left: 60%;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1506,6 +1569,14 @@ header nav ul li a {
   display: none;
 }
 
+@media screen and (min-width: 481px) {
+  .ship {
+    display: block;
+    top: 60%;
+    left: 72%;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .ship {
     display: block;
@@ -1516,6 +1587,14 @@ header nav ul li a {
 
 .side {
   display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .side {
+    display: block;
+    top: 25%;
+    left: 75%;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1536,7 +1615,7 @@ header nav ul li a {
   width: 70px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .webcam {
     top: 30%;
     left: 55%;
@@ -1548,6 +1627,17 @@ header nav ul li a {
 
 .disaster {
   display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .disaster {
+    position: absolute;
+    display: block;
+    top: 75%;
+    left: 3%;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1580,6 +1670,13 @@ header nav ul li a {
   width: 100%;
   text-align: center;
   color: #fff;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 769px) {
+  .disaster-in {
+    font-size: 1.6rem;
+  }
 }
 
 .sp_menu_wrap {
@@ -1588,7 +1685,7 @@ header nav ul li a {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   .sp_menu_wrap {
     display: none;
   }
@@ -1765,7 +1862,7 @@ header nav ul li a {
   background: rgba(15, 126, 196, 0.5);
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .f-company-ltex {
     width: 100%;
     background: rgba(15, 126, 196, 0);
@@ -1782,7 +1879,7 @@ header nav ul li a {
   text-align: center;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .f-company-tex {
     width: 55%;
     -webkit-transform: translateX(-50vw);

@@ -600,18 +600,28 @@ nav {
 .index-f {
   position: relative;
   width: 100%;
-  height: 0;
-  background: url(../../dist/images/map.png) no-repeat;
-  background-position: center top;
-  background-size: contain;
-  position: relative;
-  padding-top: 55%;
   @include mq(xl){
     background-size: contain;
     width: 100%;
   margin: 0 auto;
 
   }
+}
+.anime {
+	user-select: none;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+  padding: calc(650 / 1200 * 100%) 0 0 0;
+}
+.anime iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
 }
 .index-map-inner {
   position: absolute;
@@ -685,7 +695,8 @@ nav {
 .f-map-point {
   position: absolute;
   display: inline;
-  width: 170px;
+  width: 140px;
+  font-size: 1.4rem;
   background: #FFFFFF;
   padding: 0.75rem 3rem;
   text-align: center;
@@ -696,7 +707,7 @@ nav {
   border-radius: 60px;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
-  @include mq(md) {
+  @include mq(sm) {
     position: absolute;
     display: inline;
     background: #FFFFFF;
@@ -712,10 +723,14 @@ nav {
     -moz-border-radius: 60px;
     box-shadow: 3px 3px 3px rgba(33, 33, 33, .3);
   }
+  @include mq(md) {
+    width: 170px;
+    font-size: 1.9rem;
+  }
 }
 .f-map-point:after,.f-map-point:before{
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
     border: solid transparent;
     content:'';
@@ -729,7 +744,7 @@ nav {
 }
 .f-map-point:after{
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
   border-color: rgba(255, 255, 255, 0);
   border-top-width: 17px;
@@ -742,7 +757,7 @@ nav {
 }
 .f-map-point:before{
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
   border-color: rgba(224, 112, 0, 0);
 border-top-width: 22px;
@@ -756,6 +771,11 @@ border-top-color: #0077c0;
 }
 .civil {
     display: none;
+    @include mq(sm) {
+      display: block;
+      top: 30%;
+    left: 13%;
+   }
       @include mq(md) {
         display: block;
         top: 35%;
@@ -775,7 +795,7 @@ border-top-color: #0077c0;
 }
 .civil_point {
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
   position: absolute;
     top: 26%;
@@ -786,6 +806,11 @@ border-top-color: #0077c0;
 }
 .pavement {
 display: none;
+@include mq(sm) {
+  display: block;
+  top: 55%;
+  left: 7rem;
+}
   @include mq(md) {
     display: block;
   top:60%;
@@ -794,14 +819,24 @@ display: none;
 }
 .architecture {
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
-  top: 35%;
-  left: 38%;
+    top: 30%;
+    left: 35%;
+}
+@include mq(md) {
+  display: block;
+top: 35%;
+left: 38%;
 }
 }
 .port {
   display: none;
+  @include mq(sm) {
+    display: block;
+      top: 62%;
+      left: 53%;
+  }
   @include mq(md) {
     display: block;
   top: 68%;
@@ -810,14 +845,24 @@ left: 55%;
 }
 .environment {
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
-  top: 40%;
+    top: 35%;
+    left: 60%;
+}
+@include mq(md) {
+  display: block;
+top: 40%;
 left: 65%;
 }
 }
 .ship {
   display: none;
+  @include mq(sm) {
+    display: block;
+    top: 60%;
+    left: 72%;
+  }
   @include mq(md) {
     display: block;
   top: 63%;
@@ -826,9 +871,14 @@ left: 65%;
 }
 .side {
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
-  top: 30%;
+    top: 25%;
+    left: 75%;
+}
+@include mq(md) {
+  display: block;
+top: 30%;
 left: 80%;
 }
 }
@@ -839,7 +889,7 @@ left: 80%;
   img {
     width: 70px;
   }
-  @include mq(md) {
+  @include mq(sm) {
     top:30%;
     left: 55%;
     img {
@@ -849,6 +899,14 @@ left: 80%;
 }
 .disaster {
   display: none;
+  @include mq(sm) {
+    position: absolute;
+    display: block;
+    top:75%;
+    left: 3%;
+    width: 60px;
+    height: 60px;
+  }
   @include mq(md) {
     position: absolute;
     display: block;
@@ -875,12 +933,16 @@ left: 80%;
     width: 100%;
     text-align: center;
     color: #fff;
+    font-size: 1.2rem;
+    }
+    @include mq(md) {
+      font-size: 1.6rem;
     }
 }
 //sp_sec_menu
 .sp_menu_wrap {
   flex-wrap: wrap;
-  @include mq(md) {
+  @include mq(sm) {
     display: none;
   }
 }
@@ -1032,7 +1094,7 @@ transform: translateX(25vw);
   color: #FFF;
   padding: 5rem 0;
   background: rgba(15, 126, 196, .5);
-  @include mq(lg) {
+  @include mq(md) {
     width: 100%;
     background: rgba(15, 126, 196, 0);
   }
@@ -1046,7 +1108,7 @@ transform: translateX(25vw);
   padding: 3rem;
   margin: 0 auto;
   text-align: center;
-@include mq(lg) {
+@include mq(md) {
   width: 55%;
   -webkit-transform: translateX(-50vw);
 transform: translateX(-50vw);
