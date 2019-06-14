@@ -1,6 +1,6 @@
 
 
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/main.min.css">
 <div id="modal-content-01" class="health-wrap modal-content contact-modal">
   <p class="content-ti-point">この内容で送信します。よろしいですか？</p>
   <p class="content-ti-point">この内容で送信します。よろしいですか？</p>
@@ -166,4 +166,4 @@
   </table>
 </form> -->
 </div>
-<script src="../js/main.js"></script>
+<script src="../js/main.min.js"></script>

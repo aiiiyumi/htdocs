@@ -69,13 +69,13 @@ $(function(){
 		    }
 		    timer = setTimeout(function() {
 		      if(scrollY + windowH > $('body').offset().top) {
-		        $('.top_btn').fadeOut(400);
-		      } else if(scrollY > 100) {
-		        $('.top_btn').fadeOut(400);
+		        $('.top_btn').fadeOut(900);
+		      } else if(scrollY > 200) {
+		        $('.top_btn').fadeOut(900);
 		      } else if (scrollY + windowH > $('footer').offset().top) {
-						$('.top_btn').fadeIn(400);
+						$('.top_btn').fadeIn(100);
 					}else{
-		        $('.top_btn').fadeIn(400);
+		        $('.top_btn').fadeIn(100);
 
 		      }
 		    }, 500);
@@ -273,8 +273,6 @@ $(function() {
 	});
 
 $('#submit').click(function() { $('#mail_form').submit(); });
-
-
 $(function(){
    // #で始まるアンカーをクリックした場合に処理
 	 var headerHight = 100;
@@ -293,6 +291,8 @@ $(function(){
       return false;
    });
 });
+
+
 
 
 
