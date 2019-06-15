@@ -14,7 +14,10 @@ const changed = require("gulp-changed");
 // 差分があるときのみ実行
 const mozjpeg = require("imagemin-mozjpeg");
 
+const cleanCSS = require("gulp-clean-css");
+const rename = require("gulp-rename");
 
+const uglify = require("gulp-uglify");
 
 
 // style.scssをタスクを作成する
@@ -29,8 +32,17 @@ gulp.task('default', function () {
             browsers: ['last 2 version', 'iOS >= 8.1', 'Android >= 4.4'],
             cascade: false
         } ) )
+        .pipe(cleanCSS())
+        .pipe(rename({ suffix: '.min' }))
     // cssフォルダー以下に保存
     .pipe(gulp.dest('dist/css/'));
+});
+
+gulp.task('minjs', function() {
+  return gulp.src('dist/js/main.min.js')
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('dist/js/'));
 });
 
 
@@ -53,6 +65,7 @@ gulp.task("imagemin", function() {
   )
   .pipe(gulp.dest("./dist/images/")); // 保存
 });
+
 
 
 gulp.watch('assets/sass/main.scss', gulp.task('default'));
