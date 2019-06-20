@@ -70,6 +70,6 @@ gulp.task("imagemin", function() {
 
 gulp.watch('assets/sass/main.scss', gulp.task('default'));
 gulp.watch("./assets/img/*.{png,jpg}", gulp.task('imagemin'));
+gulp.watch("./dist/js/main.min.js", gulp.task('minjs'));
 
-
-gulp.task('gulpt', gulp.series('default', 'imagemin'));
+gulp.task('gulpt', gulp.series('default', 'imagemin', 'minjs'));
