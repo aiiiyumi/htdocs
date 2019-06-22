@@ -23,31 +23,11 @@ $(function(){
 		                isHidden = false;
 		            }
 		        }
-						// else {
 
-		//最上段から240pxの位置に戻るとフェードアウトで消える
-		            // if( !isHidden ) {
-		            //     $btn.stop(true,true).fadeOut();
-		            //     isHidden = true;
-		            // }
-		        // }
 		    });
 
 
-	//
-	// 	// クリックイベントの登録
-	// 	    $btn.click(function(){
-	//
-	// 	//  ページトップへスクロール
-	// 	        $('html, body').animate({
-	// 	                'scrollTop': 0
-	//
-	// 	// 1/1000秒でスピード調整
-	// }, 800);
-	//
-	// 	// デフォルトイベントのキャンセル
-	// 	        return false;
-	// 	    });
+
 		});
 
 		$(function(){
@@ -334,4 +314,271 @@ $(function(){
 
 	});
 
+});
+
+
+$(function() {
+	$(".a-thumb1").hover(function() {
+		$(".mainImage-a").attr("src","");
+		$(".change_text").html("");
+	});
+	$(".a-thumb2").hover(function() {
+		$(".mainImage-a").attr("src","../dist/images/26.png");
+		$(".change_text").html('<p class="change-text-bg tex-min">高知県や四国地方を中心に、関東地方や東北地方でも工事を行います。</p>');
+	});
+	$(".a-thumb3").hover(function() {
+		$(".mainImage-a").attr("src","../dist/images/27.png");
+		$(".change_text").html('<p class="change-text-bg tex-min">住民の暮らしを守る重要な基盤整備となる公共事業が中心です。</p>');
+	});
+	$(".a-thumb4").hover(function() {
+		$(".mainImage-a").attr("src","../dist/images/28.png");
+		$(".change_text").html('<p class="change-text-bg tex-min">高知県の会社として、<br>高潮対策工事は住民の命を守る大切な工事として力を入れています。</p>');
+	});
+	$(".a-thumb5").hover(function() {
+		$(".mainImage-a").attr("src","../dist/images/c_1_4.jpg");
+		$(".change_text").html('<p class="change-text-bg tex-min">富士山の保護工事についても、高い技術力が評価され長年続けている工事の一つです。</p>');
+	});
+	$(".a-thumb6").hover(function() {
+		$(".mainImage-a").attr("src","../dist/images/c_1_5.jpg");
+		$(".change_text").html('<p class="change-text-bg tex-min">ニューマチックケーソン工法など技術力が必要な工法も積極的に採用し、会社としての経験値を高めています。</p>');
+	});
+	$(".a-thumb7").hover(function() {
+		$(".mainImage-a").attr("src","../dist/images/31.png");
+		$(".change_text").html('<p class="change-text-bg tex-min">交通量の多い地域の主要道の工事は、地域の皆様の理解を頂き、安全管理に細心の注意を払いながら進めます。</p>');
+	});
+	$(".a-thumb8").hover(function() {
+		$(".mainImage-a").attr("src","../dist/images/r02_sum.jpg");
+		$(".change_text").html('<p class="change-text-bg tex-min">登米地区下部工工事／宮城県登米市東和町米谷字朝田貫地内</p>');
+	});
+	//02
+	$(".b-thumb1").hover(function() {
+		$(".mainImage-b").attr("src","");
+		$(".change_textb").html("");
+	});
+	$(".b-thumb2").hover(function() {
+		$(".mainImage-b").attr("src","../dist/images/p_1_1.jpg");
+		$(".change_textb").html('<p class="change-text-bg tex-min">岸壁は、ケーソンと呼ばれるコンクリート製の大型の箱を海中に沈めて造ります。</p>');
+	});
+	$(".b-thumb3").hover(function() {
+		$(".mainImage-b").attr("src","../dist/images/p_1_2.jpg");
+		$(".change_textb").html('<p class="change-text-bg tex-min">高さが約10mのケーソンを据え付けた岸壁。ケーソンとしては小さめですが、それでも700tもあります。</p>');
+	});
+	$(".b-thumb4").hover(function() {
+		$(".mainImage-b").attr("src","../dist/images/p_1_3.jpg");
+		$(".change_textb").html('<p class="change-text-bg tex-min">巨大なケーソンを海中に設置するのに、許される誤差はわすか数センチ。技術力、想像力、経験が問われる現場です。</p>');
+	});
+	$(".b-thumb5").hover(function() {
+		$(".mainImage-b").attr("src","../dist/images/p_1_4.jpg");
+		$(".change_textb").html('<p class="change-text-bg tex-min">風や雨、波などの状況が常に変化し、多数の機材を同時に運用する海上での作業には、チームワークが不可欠です。</p>');
+	});
+	$(".b-thumb6").hover(function() {
+		$(".mainImage-b").attr("src","../dist/images/p_1_5.jpg");
+		$(".change_textb").html('<p class="change-text-bg tex-min">ケーソンを作る海上ドッグです。ケーソンは巨大なので、海上で作って船で運びます。</p>');
+	});
+	$(".b-thumb7").hover(function() {
+		$(".mainImage-b").attr("src","../dist/images/p_1_6.jpg");
+		$(".change_textb").html('<p class="change-text-bg tex-min">ケーソン制作の様子です。木枠で囲いながらコンクリートを流し込み、下から順番に造ります。</p>');
+	});
+	$(".b-thumb8").hover(function() {
+		$(".mainImage-b").attr("src","../dist/images/p01.jpg");
+		$(".change_textb").html('');
+	});
+	//03
+	$(".c-thumb1").hover(function() {
+	  $(".mainImage-c").attr("src","");
+	  $(".change_textc").html("");
+	});
+	$(".c-thumb2").hover(function() {
+	  $(".mainImage-c").attr("src","../dist/images/s_1_1.jpg");
+	  $(".change_textc").html('<p class="change-text-bg tex-min">まるでクレーンゲームのように海底の土砂を掴み取って作業するのが、グラブ浚渫船です。</p>');
+	});
+	$(".c-thumb3").hover(function() {
+	  $(".mainImage-c").attr("src","../dist/images/s_1_2.jpg");
+	  $(".change_textc").html('<p class="change-text-bg tex-min">平成27年3月26日に完工式を迎えた最新鋭のグラブ浚渫船、「第十五龍正丸」です。</p>');
+	});
+	$(".c-thumb4").hover(function() {
+	  $(".mainImage-c").attr("src","../dist/images/s_1_3.jpg");
+	  $(".change_textc").html('<p class="change-text-bg tex-min">揺れる船の上、巨大なグラブで見えない海中を正確に掘る作業には熟練の技が必要です。</p>');
+	});
+	$(".c-thumb5").hover(function() {
+	  $(".mainImage-c").attr("src","../dist/images/s_1_4.jpg");
+	  $(".change_textc").html('<p class="change-text-bg tex-min">工期中は土日や休日を除き、基本的に船上で生活します。共に過ごすメンバーは家族同然の仲間です。</p>');
+	});
+	$(".c-thumb6").hover(function() {
+	  $(".mainImage-c").attr("src","../dist/images/s_1_5.jpg");
+	  $(".change_textc").html('<p class="change-text-bg tex-min">浚渫船の頭脳である操船室。たくさんのモニタを確認しながら、長さ60mの浚渫船を操ります。</p>');
+	});
+	$(".c-thumb7").hover(function() {
+	  $(".mainImage-c").attr("src","../dist/images/s_1_6.jpg");
+	  $(".change_textc").html('<p class="change-text-bg tex-min">タグボートと呼ばれる小型船が浚渫船の移動から、資材の運搬まで浚渫作業をサポートします。</p>');
+	});
+	$(".c-thumb8").hover(function() {
+	  $(".mainImage-c").attr("src","../dist/images/sp01_sum.jpg");
+	  $(".change_textc").html('<p class="change-text-bg tex-min">グラブ式浚渫船 第十五龍正丸</p>');
+	});
+	//04
+	$(".d-thumb1").hover(function() {
+	  $(".mainImage-d").attr("src","");
+	  $(".change_textd").html("");
+	});
+	$(".d-thumb2").hover(function() {
+	  $(".mainImage-d").attr("src","../dist/images/pv_1_1.jpg");
+	  $(".change_textd").html('<p class="change-text-bg tex-min">2015年新設の四万十合材センター。1時間に60トンものアスファルトを生産できます。</p>');
+	});
+	$(".d-thumb3").hover(function() {
+	  $(".mainImage-d").attr("src","../dist/images/pv_1_2.jpg");
+	  $(".change_textd").html('<p class="change-text-bg tex-min">モニターが並ぶオペレーター室。コンピューター制御でプラントを運転・管理します。</p>');
+	});
+	$(".d-thumb4").hover(function() {
+	  $(".mainImage-d").attr("src","../dist/images/pv_1_3.jpg");
+	  $(".change_textd").html('<p class="change-text-bg tex-min">ダンプにアスファルトを積載。作りたてのアスファルトは非常に高温です。</p>');
+	});
+	$(".d-thumb5").hover(function() {
+	  $(".mainImage-d").attr("src","../dist/images/pv_1_4.jpg");
+	  $(".change_textd").html('<p class="change-text-bg tex-min">出荷前にアスファルトの状態をチェック。冷めると固まるので、工事現場への移動時間を考えて温度管理します。</p>');
+	});
+	$(".d-thumb6").hover(function() {
+	  $(".mainImage-d").attr("src","../dist/images/pv_1_5.jpg");
+	  $(".change_textd").html('<p class="change-text-bg tex-min">舗装工事は夜間工事となる場合も多いです。通行を規制しての工事は、綿密な時間が必要になります。</p>');
+	});
+	$(".d-thumb7").hover(function() {
+	  $(".mainImage-d").attr("src","../dist/images/pv_1_6.jpg");
+	  $(".change_textd").html('<p class="change-text-bg tex-min">舗装はやり直しができない一発勝負。機械化も進んでも、一人一人の技術が出来上がりを左右します。</p>');
+	});
+	$(".d-thumb8").hover(function() {
+	  $(".mainImage-d").attr("src","../dist/images/s01.jpg");
+	  $(".change_textd").html('<p class="change-text-bg tex-min">城山トンネル舗装工事／高知県須崎市</p>');
+	});
+	//05
+	$(".e-thumb1").hover(function() {
+	  $(".mainImage-e").attr("src","");
+	  $(".change_texte").html("");
+	});
+	$(".e-thumb2").hover(function() {
+	  $(".mainImage-e").attr("src","../dist/images/te_1_1.jpg");
+	  $(".change_texte").html('<p class="change-text-bg tex-min">土壌の硬さを測定する試験です。植生の適否や、適した工法を選定する際に行います。</p>');
+	});
+	$(".e-thumb3").hover(function() {
+	  $(".mainImage-e").attr("src","../dist/images/te_1_2.jpg");
+	  $(".change_texte").html('<p class="change-text-bg tex-min">質量と堆積を直接測って、土の湿潤密度を算出します。土被り圧のデータが必要な時に用いる試験方法です。</p>');
+	});
+	$(".e-thumb4").hover(function() {
+	  $(".mainImage-e").attr("src","../dist/images/te_1_3.jpg");
+	  $(".change_texte").html('<p class="change-text-bg tex-min">機械の操作にも正確性が求められます。正しいデータを得るために日々調整しています。</p>');
+	});
+	$(".e-thumb5").hover(function() {
+	  $(".mainImage-e").attr("src","../dist/images/te_1_4.jpg");
+	  $(".change_texte").html('<p class="change-text-bg tex-min">土を突き固めて最大乾燥密度や最適含水比などを求めます。工事の基礎、盛土等施工の管理基準となります。</p>');
+	});
+	$(".e-thumb6").hover(function() {
+	  $(".mainImage-e").attr("src","../dist/images/te_1_5.jpg");
+	  $(".change_texte").html('<p class="change-text-bg tex-min"現場から求められる結果は様々です。目的に合わせて試験内容を考え、解決方法を導き出します。</p>');
+	});
+	$(".e-thumb7").hover(function() {
+	  $(".mainImage-e").attr("src","../dist/images/te_1_6.jpg");
+	  $(".change_texte").html('<p class="change-text-bg tex-min">舗設後の現場に出て行う試験もあります。出来上がった路面の凹凸の程度や透水性などを調べます。</p>');
+	});
+	$(".e-thumb8").hover(function() {
+	  $(".mainImage-e").attr("src","../dist/images/t1.jpg");
+	  $(".change_texte").html('<p class="change-text-bg tex-min">【土質試験／土粒子の密度試験】土粒子の容積あたりの質量を求め、土質の判断、飽和度や沈降分析の計算に用います。（仁井田試験室）</p>');
+	});
+	//06
+	$(".f-thumb1").hover(function() {
+	  $(".mainImage-f").attr("src","");
+	  $(".change_textf").html("");
+	});
+	$(".f-thumb2").hover(function() {
+	  $(".mainImage-f").attr("src","../dist/images/ar_1_1.jpg");
+	  $(".change_textf").html('<p class="change-text-bg tex-min">設計・積算はもちろんですが、現場で解決しにくいトラブルを技術的な支援を行い解決に導きます。</p>');
+	});
+	$(".f-thumb3").hover(function() {
+	  $(".mainImage-f").attr("src","../dist/images/ar_1_2.jpg");
+	  $(".change_textf").html('<p class="change-text-bg tex-min">積算業務を集約して原価管理の精度を高めることで、設計面でチャレンジングな提案ができるようになります。</p>');
+	});
+	$(".f-thumb4").hover(function() {
+	  $(".mainImage-f").attr("src","../dist/images/ar_1_3.jpg");
+	  $(".change_textf").html('<p class="change-text-bg tex-min">施工会社として、見た目だけでなく施工コストや建築後のメンテナンスをしっかり考えた設計を心がけています。</p>');
+	});
+	$(".f-thumb5").hover(function() {
+	  $(".mainImage-f").attr("src","../dist/images/ar_1_4.jpg");
+	  $(".change_textf").html('<p class="change-text-bg tex-min">見積や予算の精度を高め、他社との競合で勝てる見積、利益をきっちり確保できる予算を作ります。</p>');
+	});
+	$(".f-thumb6").hover(function() {
+	  $(".mainImage-f").attr("src","../dist/images/ar_1_5.jpg");
+	  $(".change_textf").html('<p class="change-text-bg tex-min">産学官の共同研究を行い、新しい発想で研究を進め、コンクリート構造物の予防保全や維持管理に活用していきます。</p>');
+	});
+	$(".f-thumb7").hover(function() {
+	  $(".mainImage-f").attr("src","../dist/images/ar_1_6.jpg");
+	  $(".change_textf").html('<p class="change-text-bg tex-min">ケーソン制作の様子です。木枠で囲いながらコンクリートを流し込み、下から順番に造ります。</p>');
+	});
+	$(".f-thumb8").hover(function() {
+	  $(".mainImage-f").attr("src","../dist/images/a01.jpg");
+	  $(".change_textf").html('<p class="change-text-bg tex-min">桜沢地区道路改良工事／宮城県本吉郡南三陸町入谷字岩沢地内</p>');
+	});
+	//07
+	$(".g-thumb1").hover(function() {
+	  $(".mainImage-g").attr("src","");
+	  $(".change_textg").html("");
+	});
+	$(".g-thumb2").hover(function() {
+	  $(".mainImage-g").attr("src","../dist/images/bu_1_1.jpg");
+	  $(".change_textg").html('<p class="change-text-bg tex-min">建築現場は高所作業が伴います。事故が起きないよう、徹底した安全管理が求められる現場です。</p>');
+	});
+	$(".g-thumb3").hover(function() {
+	  $(".mainImage-g").attr("src","../dist/images/bu_1_2.jpg");
+	  $(".change_textg").html('<p class="change-text-bg tex-min">工場施設の建築現場。大型施設では緻密な計画と進捗管理が必要です。</p>');
+	});
+	$(".g-thumb4").hover(function() {
+	  $(".mainImage-g").attr("src","../dist/images/bu_1_3.jpg");
+	  $(".change_textg").html('<p class="change-text-bg tex-min">作業員との定例ミーティング。施工図を元に、チェックを何度も繰り返す。</p>');
+	});
+	$(".g-thumb5").hover(function() {
+	  $(".mainImage-g").attr("src","../dist/images/bu_1_4.jpg");
+	  $(".change_textg").html('<p class="change-text-bg tex-min">整理整頓、清潔は現場の基本です。現場チェックをしながらも、常に美化に努めます。</p>');
+	});
+	$(".g-thumb6").hover(function() {
+	  $(".mainImage-g").attr("src","../dist/images/bu_1_5.jpg");
+	  $(".change_textg").html('<p class="change-text-bg tex-min">現場の安全や正確な進捗のために、作業員と密にコミュニケーションをとりながら施工を進めます。</p>');
+	});
+	$(".g-thumb7").hover(function() {
+	  $(".mainImage-g").attr("src","../dist/images/bu_1_6.jpg");
+	  $(".change_textg").html('<p class="change-text-bg tex-min">足場を組んで、鉄骨を建てます。この大きな施設も、2か月足らずの短期間で鉄骨が組み上がります。</p>');
+	});
+	$(".g-thumb8").hover(function() {
+	  $(".mainImage-g").attr("src","../dist/images/b01.jpg");
+	  $(".change_textg").html('<p class="change-text-bg tex-min">高知県警察本部庁舎／高知県高知市</p>');
+	});
+	//08
+	$(".h-thumb1").hover(function() {
+	  $(".mainImage-h").attr("src","");
+	  $(".change_texth").html("");
+	});
+	$(".h-thumb2").hover(function() {
+	  $(".mainImage-h").attr("src","../dist/images/en_1_1.jpg");
+	  $(".change_texth").html('<p class="change-text-bg tex-min">環境事業の拠点となる環境エンジニアリング本部社屋です。フロン破壊装置、再生装置が並んでいます。</p>');
+	});
+	$(".h-thumb3").hover(function() {
+	  $(".mainImage-h").attr("src","../dist/images/en_1_2.jpg");
+	  $(".change_texth").html('<p class="change-text-bg tex-min">フロン破壊処理の操作を行っています。新人は、まずはフロンの処理方法から学びます。</p>');
+	});
+	$(".h-thumb4").hover(function() {
+	  $(".mainImage-h").attr("src","../dist/images/en_1_3.jpg");
+	  $(".change_texth").html('<p class="change-text-bg tex-min">炎の色でフロン処理の状態をチェックします。目で見て判断する経験が必要な作業です。</p>');
+	});
+	$(".h-thumb5").hover(function() {
+	  $(".mainImage-h").attr("src","../dist/images/en_1_4.jpg");
+	  $(".change_texth").html('<p class="change-text-bg tex-min">装置のメンテナンスを行います。メーカーとしての重要な作業です。</p>');
+	});
+	$(".h-thumb6").hover(function() {
+	  $(".mainImage-h").attr("src","../dist/images/en_1_5.jpg");
+	  $(".change_texth").html('<p class="change-text-bg tex-min">大旺新洋はフロンの処理装置のメーカーでもあります。処理業を通して培ったノウハウを開発に活かせるところが強みです。</p>');
+	});
+	$(".h-thumb7").hover(function() {
+	  $(".mainImage-h").attr("src","../dist/images/en_1_6.jpg");
+	  $(".change_texth").html('<p class="change-text-bg tex-min">事業の成長のためには技術開発が不可欠です。産官学連携で、新しい方式を研究し開発につなげます。</p>');
+	});
+	$(".h-thumb8").hover(function() {
+	  $(".mainImage-h").attr("src","../dist/images/p01.jpg");
+	  $(".change_texth").html('');
+	});
 });
