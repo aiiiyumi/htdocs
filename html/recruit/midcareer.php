@@ -109,7 +109,7 @@ function validation($data) {
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="大旺新洋株式会社" />
 	<meta property="og:description" content="大旺新洋は、高知県に本社を据え、全国で活動している建 設会社です。道路や橋、護岸など、公共性の高い工事を多 く行っています。じっと腰を据えてひとつひとつ丁寧に 仕上げた仕事は、地域の人々の暮らしを静かに、しかし しっかりと支えています。" />
-	<meta property="og:url" content="http://www.daioh.co.jp/recruit/midcareer.php" />
+	<meta property="og:url" content="http://www.daioh.co.jp/recruit/midcareer.html" />
 	<meta property="og:site_name" content="大旺新洋株式会社" />
 	<meta property="og:image" content="../dist/images/facebook.jpg" />
 	<meta property="og:image:secure_url" content="" />
@@ -161,7 +161,7 @@ function validation($data) {
             <li><a href="../company/index.html">企業情報</a></li>
 						<li><a href="../company/health.html">健康経営への取組み</a></li>
             <li><a href="index.html">採用情報</a></li>
-						<li><a href="../company/contact.php">お問い合わせ</a></li>
+						<li><a href="../company/contact.html">お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -592,8 +592,8 @@ function validation($data) {
 							<p class="w-wrap f-inner"><a href="../works/index.html">事業紹介</a></p>
 							<p class="w-wrap f-inner"><a href="../pride/index.html">裏方のプライド</a></p>
 							<p class="w-wrap f-inner"><a href="../company/index.html">企業情報</a></p>
-							<p class="w-wrap f-inner"><a href="index.html">採用情報</a></p>
-              <p class="w-wrap f-inner"><a href="../company/contact.php">お問い合わせ</a></p>
+							<p class="w-wrap f-inner"><a href="../recruit/index.html">採用情報</a></p>
+              <p class="w-wrap f-inner"><a href="../company/contact.html">お問い合わせ</a></p>
           </div>
 				</div>
 				<div class="f-copywrap">

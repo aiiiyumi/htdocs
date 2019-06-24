@@ -398,7 +398,7 @@ function validation($data) {
 
         <!--sec5-->
         <!-- <section class="s-main t-sec5 mb-6 s-main-65">
-              <a href="ca_contact.php" class="btn-rd btn-gr btn_base t-center"><i class="fas fa-envelope"></i> 新卒採用のお問い合わせ</a>
+              <a href="ca_contact.html" class="btn-rd btn-gr btn_base t-center"><i class="fas fa-envelope"></i> 新卒採用のお問い合わせ</a>
         </section> -->
         <!-- sec5 -->
       <!-- top_btn -->
@@ -432,7 +432,7 @@ function validation($data) {
               <p class="f-copy">Copyright © 2005-2019 大旺新洋株式会社 All rights reserved.</p>
             </div>
             <div class="w-wrap f-privacy">
-              <p class="f-copy"><a href="company/privacy.html">個人情報保護方針</a></p>
+              <p class="f-copy"><a href="../company/privacy.html">個人情報保護方針</a></p>
             </div>
           </div>
         </div>

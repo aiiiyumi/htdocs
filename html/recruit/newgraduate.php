@@ -160,7 +160,7 @@ function validation($data) {
             <li><a href="../company/index.html">企業情報</a></li>
 						<li><a href="../company/health.html">健康経営への取組み</a></li>
             <li><a href="index.html">採用情報</a></li>
-						<li><a href="../company/contact.php">お問い合わせ</a></li>
+						<li><a href="../company/contact.html">お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -687,8 +687,8 @@ function validation($data) {
 							<p class="w-wrap f-inner"><a href="../works/index.html">事業紹介</a></p>
 							<p class="w-wrap f-inner"><a href="../pride/index.html">裏方のプライド</a></p>
 							<p class="w-wrap f-inner"><a href="../company/index.html">企業情報</a></p>
-							<p class="w-wrap f-inner"><a href="index.html">採用情報</a></p>
-              <p class="w-wrap f-inner"><a href="../company/contact.php">お問い合わせ</a></p>
+							<p class="w-wrap f-inner"><a href="../recruit/index.html">採用情報</a></p>
+              <p class="w-wrap f-inner"><a href="../company/contact.html">お問い合わせ</a></p>
           </div>
 				</div>
 				<div class="f-copywrap">
