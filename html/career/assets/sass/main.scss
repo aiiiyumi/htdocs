@@ -4157,11 +4157,13 @@ flex-direction: column;
   margin: 1rem;
   img {
     width: 60px;
+    cursor: pointer;
   }
   @include mq(sm) {
     width: 20%;
     img {
       width: 90px;
+      cursor: pointer;
     }
   }
   @include mq(md) {
