@@ -9,10 +9,10 @@ $config{'ConfirmationMode'} = 0;
 $config{'sendmail'} = '/usr/sbin/sendmail';
 
 ## フォームの宛先
-push @mailto,'support@synck.com';
+push @mailto = ('soumu@daioh.co.jp','otoiawase@e-ina.co.jp');
 
 ## 自動返信メールの差出人名
-$config{'fromname'} = 'シンクグラフィカ';
+$config{'fromname'} = '大旺新洋株式会社';
 
 ## 自動返信メールの差出人メールアドレス
 $config{'mailfrom'} = $mailto[0];
@@ -38,19 +38,18 @@ $config{'SerialBoost'} = 0;
 $config{'ThanksPage'} = '../thanks.html?no=%s';
 
 ## 設置者に届くメールの件名
-$config{'subject'} = '[ %s ] お問い合せフォームから';
+$config{'subject'} = '[大旺新洋]お問い合せフォームから';
 
 ## 設置者に届くメールの本文整形
 $_TEXT{'posted'} = <<'__posted_body__';
 <_mfp_jssemantics_>
 <_mfp_date_>
-<中途採用>お問い合せフォームより以下のメールを受付ました。
+お問い合せフォームより以下のメールを受付ました。
 ──────────────────────────
 受付番号：<_mfp_serial_>
 入力時間：<_mfp_input_time_>
 確認時間：<_mfp_confirm_time_>
 　送信元：<_mfp_referrer_>
-支払金額：<_mfp_cartprice_>
 
 <_resbody_>
 ──────────────────────────
@@ -58,11 +57,10 @@ $_TEXT{'posted'} = <<'__posted_body__';
 <_mfp_env_>
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-　※この署名はサンプルです。必ず変更してください※　
-　シンクグラフィカ / SYNCKGRAPHICA
-　〒005-0007 札幌市南区澄川2条2丁目4番1号
-　TEL / 050-3390-0450　FAX / 011-887-0450
-　http://www.synck.com
+大旺新洋株式会社
+　〒781-0112　高知県高知市仁井田1625-2
+　TEL(088)847-2112 FAX(088)837-6664
+　http://www.daioh.co.jp/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 __posted_body__
 
@@ -70,14 +68,12 @@ __posted_body__
 ## 自動返信メールの件名 (有効にする場合は下記の行頭#を外してください。)
 ## ※※※！！！※※※！！！※※※！！！※※※！！！※※※！！！※※※
 
-$config{"ReturnSubject"} = '[ %s ] お問い合せありがとうございました';
+$config{"ReturnSubject"} = 'お問い合せありがとうございました';
 
 ## 自動返信メールの本文
 $_TEXT{'responder'} = <<'__return_body__';
 <_姓_> 様
 ──────────────────────────
-
-<_都道府県_北海道_>
 
 この度はお問い合せ頂き誠にありがとうございました。
 改めて担当者よりご連絡をさせていただきます。
@@ -93,11 +89,10 @@ $_TEXT{'responder'} = <<'__return_body__';
 この度はお問い合わせ重ねてお礼申し上げます。
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-　※この署名はサンプルです。必ず変更してください※　
-　シンクグラフィカ / SYNCKGRAPHICA
-　〒005-0007 札幌市南区澄川2条2丁目4番1号
-　TEL / 050-3390-0450　FAX / 011-887-0450
-　http://www.synck.com
+大旺新洋株式会社
+　〒781-0112　高知県高知市仁井田1625-2
+　TEL(088)847-2112 FAX(088)837-6664
+　http://www.daioh.co.jp/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 __return_body__
 
@@ -211,7 +206,7 @@ push @AddOns,'smoothScroll.js';		## [New] モバイル端末エラー時のス�
 
 @Modules = ();
 #push @Modules,'MultiConfig';	## 複数の設定ファイルを分岐させる
-push @Modules,'check';			## CGI動作環境チェック ※本番では消してください
+#push @Modules,'check';			## CGI動作環境チェック ※本番では消してください
 push @Modules,'logger';			## アクセス解析ログモジュール
 #push @Modules,'thanks';			## サンクスページへの引き継ぎ
 #push @Modules,'cart';			## ショッピングカート機能
