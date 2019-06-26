@@ -84,6 +84,14 @@ flex-direction: column;
 
 }
 }
+.flex-row-md-clcl {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  line-height: 1;
+flex-direction: column;
+}
 .flex-row-md {
   display: flex;
   margin: 0 auto;
@@ -4112,6 +4120,7 @@ p.no-image {
 //whats
 .radius-s-fbox {
   width: 90%;
+  height: 100%;
   background: #FFF;
   padding: 2rem;
   margin: 2rem auto;

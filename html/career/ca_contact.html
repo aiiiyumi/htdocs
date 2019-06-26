@@ -110,8 +110,8 @@
               <p class="text-b">お名前<span class="notice">必須</span></p>
             </div>
             <div class="flex-l-l t-left contact-fbox1">
-              <input type="text" name="姓(必須)" size="20" class="mfp contact-2col" onkeyup="inputTyping(this.form.id,'セイ',event.keyCode,this)" required="required">
-              <input type="text" name="名(必須)" size="20" class="mfp contact-2col" onkeyup="inputTyping(this.form.id,'メイ',event.keyCode,this)" required="required">
+              <input type="text" name="姓" data-kana="セイ" size="20" class="mfp contact-2col" required="required">
+              <input type="text" name="名" data-kana="メイ" size="20" class="mfp contact-2col" required="required">
             </div>
           </div>
           <div class="flex-row-md plant-list-box-none">
@@ -119,8 +119,8 @@
               <p class="text-b">フリガナ（全角）</p>
             </div>
             <div class="flex-l-l t-left contact-fbox1">
-              <input type="text" name="セイ" size="20" class="mfp contact-2col">
-              <input type="text" name="メイ" size="20" class="mfp contact-2col">
+              <input type="text" name="セイ" size="20" data-charcheck="zenkaku" class="mfp contact-2col">
+              <input type="text" name="メイ" size="20" data-charcheck="kana" class="mfp contact-2col">
             </div>
           </div>
           <div class="flex-row-md plant-list-box-none">
@@ -144,7 +144,7 @@
               <p class="text-b">電話番号<span class="notice">必須</span></p>
             </div>
             <div class="flex-l-l t-left contact-fbox1">
-              <input type="text" name="電話番号(必須)" size="20" class="mfp" required="required">
+              <input type="tel" data-type="tel" name="電話番号" size="20" class="mfp" required="required">
             </div>
           </div>
           <div class="flex-row-md plant-list-box-none">
@@ -162,6 +162,7 @@
             <button type="submit" class="contact-bbtn health-wrap">入力内容を確認する</button>
           </p>
           </form>
+
         </div>
 
             <!-- form -->

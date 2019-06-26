@@ -9,7 +9,8 @@ $config{'ConfirmationMode'} = 0;
 $config{'sendmail'} = '/usr/sbin/sendmail';
 
 ## フォームの宛先
-push @mailto = ('soumu@daioh.co.jp','otoiawase@e-ina.co.jp');
+push @mailto,'soumu@daioh.co.jp';
+push @mailto,'otoiawase@e-ina.co.jp';
 
 ## 自動返信メールの差出人名
 $config{'fromname'} = '大旺新洋株式会社';
@@ -18,7 +19,7 @@ $config{'fromname'} = '大旺新洋株式会社';
 $config{'mailfrom'} = $mailto[0];
 
 ## 自動返信メールのreply-to
-#$config{'replyto'} = '';
+$config{'replyto'} = '';
 
 ## 念のためBCC送信宛先 (解除する場合は下記1行をコメントアウト)
 ## 以下をコメントアウトしていない場合は自動返信メールの控えが届きます。
@@ -35,7 +36,7 @@ $config{'SerialFormat'} = '<date>%04d';
 $config{'SerialBoost'} = 0;
 
 ## サンクスページのURL(URLかsend.cgiから見た相対パス)
-$config{'ThanksPage'} = '../thanks.html?no=%s';
+$config{'ThanksPage'} = '../thanks.html';
 
 ## 設置者に届くメールの件名
 $config{'subject'} = '[大旺新洋]お問い合せフォームから';
@@ -208,7 +209,7 @@ push @AddOns,'smoothScroll.js';		## [New] モバイル端末エラー時のス�
 #push @Modules,'MultiConfig';	## 複数の設定ファイルを分岐させる
 #push @Modules,'check';			## CGI動作環境チェック ※本番では消してください
 push @Modules,'logger';			## アクセス解析ログモジュール
-#push @Modules,'thanks';			## サンクスページへの引き継ぎ
+push @Modules,'thanks';			## サンクスページへの引き継ぎ
 #push @Modules,'cart';			## ショッピングカート機能
 #push @Modules,'request';		## リクエスト機能
 #push @Modules,'ISO-2022-JP';	## メールをJISで送信
